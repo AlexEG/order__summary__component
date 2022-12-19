@@ -1,0 +1,13 @@
+@use '../base/colors' as *;
+
+body {
+
+  background-image: url(../../design/mobile-design.jpg);
+
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: var(--bg-body);
+}
