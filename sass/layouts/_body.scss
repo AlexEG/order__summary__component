@@ -1,11 +1,7 @@
 @use '../base/colors' as *;
 
 body {
-
   background-color: var(--bg-body);
-  background-image: url(../../design/mobile-design.jpg);
-
-  background-repeat: no-repeat;
   display: flex;
   justify-content: center;
   align-items: center;
