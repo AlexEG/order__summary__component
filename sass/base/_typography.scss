@@ -1,0 +1,41 @@
+@use './colors' as *;
+
+body {
+  font-family: 'Red Hat Display', sans-serif;
+  ;
+}
+
+.main__card {
+  h1 {
+    color: var(--text2);
+
+    font: {
+      weight: 900;
+      size: 1.4rem;
+    }
+
+    margin-top: 34px;
+    margin-inline: auto;
+  }
+
+
+  .card__content {
+    margin-inline: auto;
+    text-align: center;
+    padding-inline: 40px;
+
+    p {
+      font: {
+        weight: 500;
+        size: 15px;
+      }
+
+      color: var(--text1);
+      margin-top: 10px;
+      line-height: 1.6;
+    }
+  }
+
+
+
+}

@@ -1,19 +1,103 @@
+@use '../base/colors' as *;
+
 .main__card {
   width: 327px;
   height: 569px;
-  background-color: rgba(255, 0, 0, 0.329);
+  background-color: var(--bg-card);
   border-radius: 20px;
-
+  overflow: hidden;
   display: grid;
+  grid-template-rows: auto 70px 90px 100px 90px 1fr;
+
+  .banner {
+    width: 100%;
+  }
+
+  .buy__now {
+    display: grid;
+    grid-template-columns: 80px 100px 1fr;
+    align-items: center;
+    background-color: var(--bg-music);
+    width: 280px;
+    height: 75px;
+    border-radius: 10px;
+    margin-inline: auto;
+    margin-top: 17px;
+
+    img {
+      margin-left: 13px;
+    }
+
+    .price {
+      margin: 10px 0 0 3px;
+
+      p {
+        color: var(--text2);
+
+        margin-bottom: 10px;
+
+        font: {
+          weight: 900;
+          size: 14px;
+        }
+      }
+
+      span {
+        color: var(--text1);
+
+
+        font: {
+          weight: 700;
+          size: 14px;
+        }
+      }
+    }
 
 
 
+    a {
+      color: var(--Bright-blue);
+      align-self: center;
+      margin-top: 10px;
+      margin-left: 35px;
 
+      font: {
+        weight: 700;
+        size: .8rem;
+      }
+    }
+  }
+
+
+  .btn {
+    margin-inline: auto;
+    margin-top: 20px;
+    border-radius: 10px;
+    width: 280px;
+    height: 52px;
+    background-color: var(--Bright-blue);
+    color: #ffffff;
+    border: none;
+    font-weight: 700;
+  }
+
+
+  .cancel {
+    color: var(--text1);
+    text-align: center;
+    margin-top: 5px;
+
+    font: {
+      weight: 900;
+      size: 1rem;
+    }
+  }
 
 }
 
-.bg__img{
-  width:100%;
-  height: 20%;
+.bg__img {
+  position: absolute;
+  top: 0;
+  width: 100%;
   z-index: -1;
- }
+}
