@@ -1,7 +1,7 @@
 @use "../base/colors" as *;
 
 .main__card {
-  width: 327px;
+  max-width: 450px;
   height: 569px;
   background-color: var(--bg-card);
   border-radius: 20px;
